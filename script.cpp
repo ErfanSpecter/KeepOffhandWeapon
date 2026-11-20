@@ -29,7 +29,7 @@ static const unsigned long long N_GET_CURRENT_WEAPON  = 0x3A87E44BB9A01D54ULL; /
 static const unsigned long long N_SET_CURRENT_WEAPON  = 0xADF692B254977C0CULL; // (ped, weapon, equipNow, attachPoint, p4, p5)
 
 // ---- values to verify with the F9 probe ----
-static const int  ATTACH_OFFHAND = 1;          // VERIFY (0 = main hand)
+static const int  ATTACH_OFFHAND = 0;          // 0 = main hand (the gun you are holding). VERIFY with F9 log
 static const int  WHEEL_KEY      = VK_TAB;     // weapon wheel key on keyboard (hold). Change if you rebound it.
 static const Hash WEAPON_UNARMED = 0xA2719263;
 
