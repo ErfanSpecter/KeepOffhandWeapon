@@ -12,9 +12,7 @@ jobs:
           arch: x64
       - name: Compile
         shell: cmd
-        run: cl /LD /O2 /EHsc /I"sdk\inc" script.cpp /link "sdk\lib\ScriptHookRDR2.lib" /OUT:KeepOffhandWeapon.asi
+        run: cl /LD /O2 /EHsc /I".github\workflows\sdk\inc" script.cpp /link ".github\workflows\sdk\lib\ScriptHookRDR2.lib" /OUT:KeepOffhandWeapon.asi
       - uses: actions/upload-artifact@v4
         with:
           name: KeepOffhandWeapon
-          path: KeepOffhandWeapon.asi
- 
